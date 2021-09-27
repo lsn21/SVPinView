@@ -86,8 +86,8 @@ public class SVPinView: UIView {
         didSet { refreshPinView() }
     }
     
-    public var didFinishCallback: ((String)->())?
-    public var didChangeCallback: ((String)->())?
+    @objc public var didFinishCallback: ((String)->())?
+    @objc public var didChangeCallback: ((String)->())?
     
     // MARK: - Init methods -
     required public init?(coder aDecoder: NSCoder) {
